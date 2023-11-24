@@ -35,5 +35,5 @@ spec:
             (cluster_version{version!~"(4\\.11\\.36|4\\.12\\.12)"})
           '
         labels:
-          severity: critical
+          severity: warning
           namespace: '{{ $labels.namespace }}'

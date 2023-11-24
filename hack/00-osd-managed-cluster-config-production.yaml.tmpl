@@ -34539,7 +34539,7 @@ objects:
               endpoint="metrics", reason!="NoChannel"}) and on(instance, job, namespace,
               pod, service) (cluster_version{version!~"(4\\.11\\.36|4\\.12\\.12)"}) '
             labels:
-              severity: critical
+              severity: warning
               namespace: '{{ $labels.namespace }}'
     - apiVersion: monitoring.coreos.com/v1
       kind: PrometheusRule
